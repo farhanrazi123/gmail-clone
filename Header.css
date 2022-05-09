@@ -1,0 +1,96 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__left > img {
+  object-fit: contain;
+  height: 80px;
+  margin-left: 5px;
+}
+
+.header__middle {
+  display: flex;
+  flex: 0.7;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.header__middle > .MuiSvgIcon-root {
+  color: gray;
+}
+
+.header__middle > input {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  outline-width: 0;
+  font-size: medium;
+  background-color: transparent;
+}
+
+.header__right {
+  display: flex;
+  padding-right: 20px;
+}
+
+.header__rightAvatar {
+  cursor: pointer;
+}
+@media (max-width: 35em) {
+  .header__left > img {
+    height: 2.1em;
+  }
+  .header__search {
+    background-color: transparent;
+    display: none;
+  }
+
+  .header__search > input {
+    display: none;
+  }
+
+  .searchIcon {
+    margin-left: auto !important;
+    display: block !important;
+  }
+  .tuneIcon {
+    display: none !important;
+  }
+}
+
+@media (max-width: 20em) {
+  .header__rightIcons > button:nth-child(3) {
+    display: none !important;
+  }
+}
+
+@media (max-width: 17em) {
+  .header__rightIcons > button:nth-child(4) {
+    display: none !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .hide{
+      display: none !important; 
+      width: 0px !important; 
+      height: 0px !important; 
+      max-width: 0px !important; 
+      max-height: 0px !important; 
+      line-height: 0 !important;
+  }
+  .header_right{
+      position: absolute;
+      right:0;
+  }
+}
